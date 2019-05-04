@@ -24,13 +24,40 @@ What one company deems as appropriate privacy policies may not be for its users.
 4) Laws can be enforced, with less reliance on a software developer's disclosure.
 5) Granular data control of what is allowable and fair use of data being shared
 
-## A JSON for Privacy Objects and Portability 
-The JSON-POP protocol is designed to tag every data string, with a formatted privacy descriptor, as part of the standard JSON payload. This is done using commentary remarks which are enclosed in the payload and have no effect on code execution. JSON-POP executes asynchronously at run-time as the application accepting the JSON container ignores the POP commentary. However because it ties organically to every object, it can be traced back to its origins.
+## A JSON for Privacy Objects and Portability — JSON-POP
+The **JSON-POP** notation is designed to tag every data string, with a formatted privacy descriptor, as part of the standard JSON payload. This is done using commentary remarks which are enclosed in the payload and have no effect on code execution. JSON-POP executes asynchronously at run-time as the application accepting the JSON container ignores the POP commentary. However because it ties organically to every object, it can be traced back to its origins.
 POP consists of:
-Originator name- Name or legal entity abbreviation of data collector
-Data category code- Demographic, health, financial, confidential
-Restrictions- Allowable shared use of data (Full, Timed limited, Pass-thru, None)
-Symbology
-Þ Beginning of POP
-[ Beginning data type enclosure
-] End of data type enclosure
+1) Originator name- Name or legal entity abbreviation of data collector
+2) Data category code- Demographic, health, financial, confidential
+3) Restrictions- Allowable shared use of data (Full, Timed limited, Pass-thru, None)
+
+## Symbology
+1) Þ Beginning of POP
+2) [] data type enclosure
+3) 
+
+```JSON
+{
+   "Þ": "comment text goes here...",
+   "glossary": {
+      "title": "example glossary",
+      "GlossDiv": {
+         "title": "S",
+         "GlossList": {
+            "GlossEntry": {
+               "ID": "SGML",
+               "SortAs": "SGML",
+               "GlossTerm": "Standard Generalized Markup Language",
+               "Acronym": "SGML",
+               "Abbrev": "ISO 8879:1986",
+               "GlossDef": {
+                  "para": "A meta-markup language, used to create markup languages such as DocBook.",
+                  "GlossSeeAlso": ["GML", "XML"]
+               },
+               "GlossSee": "markup"
+            }
+         }
+      }
+   }
+}
+```
