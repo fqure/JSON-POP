@@ -34,8 +34,11 @@ POP consists of:
 ## Symbology
 1) ÞOÞ Object name for POP notation
 2) [...] data type enclosure
-3) 
+3) -- Appendix
 
+## Samples
+
+### Primary entity API request JSON object
 ```javascript
 {
    "ÞOÞ": "[ACME Corporation][Demographic][Full]",
@@ -46,17 +49,38 @@ POP consists of:
          "UserList": {
             "UserEntry": {
                "ID": "JohnDoe12",
-               "SortAs": "SGML",
-               "GlossTerm": "Standard Generalized Markup Language",
-               "Acronym": "SGML",
-               "Abbrev": "ISO 8879:1986",
+               "SortAs": "USR",
                "UserDef": {
-                  "about": "I am a 23 year old student. My hobbies include gardening.",
+                  "about": "I am a 23 year old student. My hobbies include Fortnight.",
                   "UserSeeAlso": ["GML", "XML"]
                },
                "UserSee": "markup"
             }
          }
+      }
+   }
+}
+```
+### Secondary entity API request JSON object
+```javascript
+{
+   "ÞOÞ": "[ACME Corporation][Demographic][Full]--[ABC Inc.]",
+   "demographics": {
+      "Primary": {
+         "FirstName": "John",
+         "LastName": "Doe"
+      }
+   }
+}
+```
+### Tertiary entity API request JSON object
+```javascript
+{
+   "ÞOÞ": "[ACME Corporation][Demographic][Full]--[ABC Inc.]--[ZZZ LLC]",
+   "demographics": {
+      "Primary": {
+         "FirstName": "John",
+         "LastName": "Doe"
       }
    }
 }
