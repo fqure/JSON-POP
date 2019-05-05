@@ -76,7 +76,7 @@ POP consists of:
 ### Tertiary entity API request JSON object
 ```javascript
 {
-**   "ÞOÞ": "[ACME Corporation][Demographic][Full]--[ABC Inc.]--[ZZZ LLC]", **
+   "ÞOÞ": "[ACME Corporation][Demographic][Full]--[ABC Inc.]--[ZZZ LLC]",
    "demographics": {
       "Primary": {
          "FirstName": "John",
