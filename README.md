@@ -34,7 +34,7 @@ POP consists of:
 ## Symbology
 1) ÞOÞ Object name for POP notation
 2) [...] data type enclosure
-3) -- Appendix
+3) -- listed entity add-ons
 
 ## Samples
 
@@ -76,7 +76,7 @@ POP consists of:
 ### Tertiary entity API request JSON object
 ```javascript
 {
-   "ÞOÞ": "[ACME Corporation][Demographic][Full]--[ABC Inc.]--[ZZZ LLC]",
+**   "ÞOÞ": "[ACME Corporation][Demographic][Full]--[ABC Inc.]--[ZZZ LLC]", **
    "demographics": {
       "Primary": {
          "FirstName": "John",
