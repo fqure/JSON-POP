@@ -1,15 +1,16 @@
-# If we can track privacy, we can protect It.
+## Introduction
+**If we can track down the use of our private data, we can protect it.**
 Today, privacy is at the center a debate on consumer's use of technology. It has recently gained national attention with hearings from tech CEOs testifying in front of Congress. The hearings made it clear to legislators that not only has privacy run unfettered but that regulating it is difficult. These software companies have an unprecedented advantage over consumers when it comes to protecting sensitive consumer data. This is mainly due to complex privacy policies and the inability for government oversight to track down privacy breeches. From a governance perspective, it is unclear how to regulate matters of privacy especially at scale.
 If, for example, a user's mobile number was shared amongst several companies, regulators and oversight committees would have an impossible time disseminating how such sensitive information got out and who was responsible. 
 This is due primarily to the complex nature of not only software but the rules by which data is shared and transmitted to partners and associates. The sharing of data between entities is done by protocols knows as APIs.
 APIs are foundational to modern networked computing. On a global scale, the most widely accepted apparatus utilized for the delivery and transport of data exchange is the JSON format - a  JavaScript object notation formatted as an array data type packaged for asynchronous delivery. There are many variants that utilize this transport mechanism. For example in healthcare, where data privacy is meant to retain the highest standards, derivatives of JSON include FHIR and HL-7.
 For the purposes of simplification, we will focus on the vanilla "out of the box" version of JSON as it applies to API.
-## Privacy vs. Security
+### Privacy vs. Security
 There is a strong binding correlation between data security and data privacy but they mean different things.
 Data security is fundamentally about security of data and who has authorization to access that data. Data privacy pertains to authorized access, concerning who has it and who defines it. Data security is a technical implementation of the policies set forth by data privacy. The trade-off between security and privacy is a balance between a person’s right to privacy and the counterbalance of how far data security is needed. 
 It is with this differentiation that data security is much more clearly defined and most security measures are common amongst all organizations. For example, encryption is a security matter and has been standardized with common tools and methodology. Who gets to un-encrypt and de-crypt user data is a privacy issue and is left up to each organization to figure out.
 There is no point in having more data security if people’s right to privacy will also be lost, in the process. These simple differences are significant because they have implications for privacy and security, which, in turn, have enormous consequences on business, politics, and society as a whole. 
-## Obfuscation Problem
+### Obfuscation Problem
 Software privacy policies have been relegated to users having to opt-in or opt-out of a feature or in most cases use of a software application or service all-together. The user is faced with the question 'What would you be willing to give to get in order to enter?'
 Adding to its complexity are privacy policies. Legal ease with blanket clauses meant to protect a company as thinly veiled of compliance. Its these policies that often get called into question by consumer protection organizations and oversight committees. We currently have no mechanism to trace the validity of the claims put forth in these policies. GDPR was suppose to be that mechanism, but as it has demonstrated, it lacks real intelligence about how data is being moved around from system to system.
 
@@ -26,24 +27,26 @@ What one company deems as appropriate privacy policies may not be for its users.
 
 ## A JSON notation for Privacy Objects and Portability — JSON-POP
 The **JSON-POP** notation is designed to tag every data string, with a formatted privacy descriptor, as part of the standard JSON payload. This is done using commentary remarks which are enclosed in the payload and have no effect on code execution. JSON-POP executes asynchronously at run-time as the application accepting the JSON container ignores the POP commentary. However because it ties organically to every object, it can be traced back to its origins.
-POP consists of:
-1) Entity name- Name or legal entity abbreviation of data collector
-2) Data category code- Demographic, health, financial, confidential
-3) Share Rights- Allowable shared use of data (Full, Timed limited, Pass-thru, None)
 
-## Symbology
+### POP consists of:
+#### 1) Entity name
+      Name or legal entity abbreviation of data collector
+#### 2) Data category code
+      Demographic, health, financial, confidential
+#### 3) Share Rights
+      Allowable shared use of data (Full, Timed limited, Pass-thru, None)
 
+## Notation
+1) ÞOÞ Object name for POP notation
+2) [...] data type enclosure
+3) -- listed entity add-ons
+
+### Samples
 | Object | Entity           | Category  | Share Rights |
 | ---- |:------------------:| -------------:| -------------:|
 | ÞOÞ  | ACME Corp | Demographic | Full |
 | ÞOÞ  | ABC Inc. | Demographic | Full |
 | ÞOÞ  | ZZZ LLC | Demographic | None |
-
-1) ÞOÞ Object name for POP notation
-2) [...] data type enclosure
-3) -- listed entity add-ons
-
-## Samples
 
 ### Primary entity API request JSON object
 ```javascript
