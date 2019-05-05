@@ -27,11 +27,18 @@ What one company deems as appropriate privacy policies may not be for its users.
 ## A JSON notation for Privacy Objects and Portability — JSON-POP
 The **JSON-POP** notation is designed to tag every data string, with a formatted privacy descriptor, as part of the standard JSON payload. This is done using commentary remarks which are enclosed in the payload and have no effect on code execution. JSON-POP executes asynchronously at run-time as the application accepting the JSON container ignores the POP commentary. However because it ties organically to every object, it can be traced back to its origins.
 POP consists of:
-1) Originator name- Name or legal entity abbreviation of data collector
+1) Entity name- Name or legal entity abbreviation of data collector
 2) Data category code- Demographic, health, financial, confidential
-3) Restrictions- Allowable shared use of data (Full, Timed limited, Pass-thru, None)
+3) Share Rights- Allowable shared use of data (Full, Timed limited, Pass-thru, None)
 
 ## Symbology
+
+| Object | Entity           | Category  | Share Rights |
+| ---- |:------------------:| -------------:| -------------:|
+| ÞOÞ  | ACME Corp | Demographic | Full |
+| ÞOÞ  | ABC Inc. | Demographic | Full |
+| ÞOÞ  | ZZZ LLC | Demographic | None |
+
 1) ÞOÞ Object name for POP notation
 2) [...] data type enclosure
 3) -- listed entity add-ons
