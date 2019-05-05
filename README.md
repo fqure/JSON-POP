@@ -46,7 +46,7 @@ As with any proposed documentation standard, JSON-POP relies on adherance that m
 
 ### Examples
 
-                 **"ÞOÞ": "[ACME Corporation][Demographic][Full]--[ABC Inc.]--[ZZZ LLC]",**
+      "ÞOÞ": "[ACME Corporation][Demographic][Full]--[ABC Inc.]--[ZZZ LLC]",
 
 | Object | Entity           | Category  | Share Rights |
 | ---- |:------------------:| -------------:| -------------:|
