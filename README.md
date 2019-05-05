@@ -26,7 +26,7 @@ What one company deems as appropriate privacy policies may not be for its users.
 4) Laws can be enforced, with less reliance on a software developer's disclosure.
 5) Granular data control of what is allowable and fair use of data being shared
 
-## A JSON notation for Privacy Objects and their Protection — JSON-POP
+## A JSON notation for Privacy Object Protection — JSON-POP
 The **JSON-POP** notation is designed to tag every data string, with a formatted privacy descriptor, as part of the standard JSON payload. This is done using commentary remarks which are enclosed in the payload and have no effect on code execution. JSON-POP executes asynchronously at run-time as the application accepting the JSON container ignores the POP commentary. However because it ties organically to every object, it can be traced back to its origins.
 
 ### POP consists of:
