@@ -19,13 +19,13 @@ Once data is collected from the user, the next privacy vulnerability is data tra
 Let's hypothetically suppose that even if laws and legislation were enacted to disclose the names of 3rd parties, such as business associate agreements for public viewing, it would still leave the consumer in the dark. Does the named 3rd party get all of my data I shared when I signed up and used the application or service or only pieces of data?
 ### Removing Opacity
 What one company deems as appropriate privacy policies may not be for its users. advocates or governance. There currently is no development methodology or framework to audit, trace, and ensure user privacy practices and validate an organizations safeguarding of user privacy. Tracing user data, at every node of contact, is the key to ensure the viability of privacy. The premise being introduced here is to ensure that all data tied to privacy policies can be flagged for auditing through the use of examining the transport of user data. There are some key advantages of tracking user data using this approach:
-1) Companies can easily prove they are in compliance with their stated privacy policies.
+1) Devlopers can tag their API to privide full transparency with their stated privacy policies.
 2) Users, advocates and oversight governance can become more efficient at examining an entity's privacy policy and standards
 3) Intellectual property of software, such as source code and business logic, can remain protected during an open audit process.
 4) Laws can be enforced, with less reliance on a software developer's disclosure.
 5) Granular data control of what is allowable and fair use of data being shared
 
-## A JSON notation for Privacy Objects and Portability — JSON-POP
+## A JSON notation for Privacy Objects for Portability — JSON-POP
 The **JSON-POP** notation is designed to tag every data string, with a formatted privacy descriptor, as part of the standard JSON payload. This is done using commentary remarks which are enclosed in the payload and have no effect on code execution. JSON-POP executes asynchronously at run-time as the application accepting the JSON container ignores the POP commentary. However because it ties organically to every object, it can be traced back to its origins.
 
 ### POP consists of:
@@ -41,7 +41,13 @@ The **JSON-POP** notation is designed to tag every data string, with a formatted
 2) [...] data type enclosure
 3) -- listed entity add-ons
 
-### Samples
+## What does JSON-POP do?
+As with any proposed documentation standard, JSON-POP relies on adherance that may be self-driven, market-driven or regulatory driven.  
+
+### Examples
+
+                 **"ÞOÞ": "[ACME Corporation][Demographic][Full]--[ABC Inc.]--[ZZZ LLC]",**
+
 | Object | Entity           | Category  | Share Rights |
 | ---- |:------------------:| -------------:| -------------:|
 | ÞOÞ  | ACME Corp | Demographic | Full |
