@@ -1,5 +1,6 @@
 ## Introduction
 **If we can track down the use of our private data, we can protect it.**
+
 Today, privacy is at the center a debate on consumer's use of technology. It has recently gained national attention with hearings from tech CEOs testifying in front of Congress. The hearings made it clear to legislators that not only has privacy run unfettered but that regulating it is difficult. These software companies have an unprecedented advantage over consumers when it comes to protecting sensitive consumer data. This is mainly due to complex privacy policies and the inability for government oversight to track down privacy breeches. From a governance perspective, it is unclear how to regulate matters of privacy especially at scale.
 If, for example, a user's mobile number was shared amongst several companies, regulators and oversight committees would have an impossible time disseminating how such sensitive information got out and who was responsible. 
 This is due primarily to the complex nature of not only software but the rules by which data is shared and transmitted to partners and associates. The sharing of data between entities is done by protocols knows as APIs.
@@ -25,7 +26,7 @@ What one company deems as appropriate privacy policies may not be for its users.
 4) Laws can be enforced, with less reliance on a software developer's disclosure.
 5) Granular data control of what is allowable and fair use of data being shared
 
-## A JSON notation for Privacy Objects for Portability — JSON-POP
+## A JSON notation for Privacy Objects and their Protection — JSON-POP
 The **JSON-POP** notation is designed to tag every data string, with a formatted privacy descriptor, as part of the standard JSON payload. This is done using commentary remarks which are enclosed in the payload and have no effect on code execution. JSON-POP executes asynchronously at run-time as the application accepting the JSON container ignores the POP commentary. However because it ties organically to every object, it can be traced back to its origins.
 
 ### POP consists of:
