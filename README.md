@@ -32,29 +32,29 @@ POP consists of:
 3) Restrictions- Allowable shared use of data (Full, Timed limited, Pass-thru, None)
 
 ## Symbology
-1) Þ Beginning of POP
-2) [] data type enclosure
+1) |ÞOÞ Beginning of POP
+2) [...] data type enclosure
 3) 
 
-```JSON
+```javascript
 {
-   "Þ": "comment text goes here...",
-   "glossary": {
-      "title": "example glossary",
-      "GlossDiv": {
-         "title": "S",
-         "GlossList": {
-            "GlossEntry": {
-               "ID": "SGML",
+   "|ÞOÞ|": "[ACME Corporation][Demographic][Full]",
+   "demographics": {
+      "Primary": {
+         "FirstName": "John",
+         "LastName": "Doe",
+         "UserList": {
+            "UserEntry": {
+               "ID": "JohnDoe12",
                "SortAs": "SGML",
                "GlossTerm": "Standard Generalized Markup Language",
                "Acronym": "SGML",
                "Abbrev": "ISO 8879:1986",
-               "GlossDef": {
-                  "para": "A meta-markup language, used to create markup languages such as DocBook.",
-                  "GlossSeeAlso": ["GML", "XML"]
+               "UserDef": {
+                  "about": "I am a 23 year old student. My hobbies include gardening.",
+                  "UserSeeAlso": ["GML", "XML"]
                },
-               "GlossSee": "markup"
+               "UserSee": "markup"
             }
          }
       }
