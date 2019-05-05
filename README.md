@@ -41,8 +41,8 @@ The **JSON-POP** notation is designed to tag every data string, with a formatted
 2) [...] data type enclosure
 3) -- listed entity add-ons
 
-## What does JSON-POP do?
-As with any proposed documentation standard, JSON-POP relies on adherance that may be self-driven, market-driven or regulatory driven.  
+## Usage
+As with any proposed documentation standard, JSON-POP relies on adherance that may be self-driven, market-driven or regulatory driven. The notation can be tracked for every API call made. As every organization shares user data, the JSON-POP notaion appends. JSON-POP is made up of its object identifier, the Entity- a developers name or organization's legal name, a Category which identifies the tyoe if data object, and Share Rights- the permission given by the developer to share the object. In the example below, the same user information is distributed three times. All three organizaztion are listed in the POP object. If the same data object were to be shared with other organizations, each of those organizations would be listed. This ensures traceabiity during the privacy review or auditing process.
 
 ### Examples
 
@@ -101,3 +101,5 @@ As with any proposed documentation standard, JSON-POP relies on adherance that m
    }
 }
 ```
+## Development
+The purpose of JSON-POP is to ensure traceability at every API share point. By doing so, every touch point ensures consistency and responsibility in the originator's data object. The JSON array itself can be built using any typed language. Formating is important so that an auditing system can cleanly read the object receipt that encapsulates the JSON-POP obect.
