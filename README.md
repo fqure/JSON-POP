@@ -103,4 +103,4 @@ As with any proposed documentation standard, JSON-POP relies on adherance that m
 }
 ```
 ## Development
-The purpose of JSON-POP is to ensure traceability at every API share point. By doing so, every touch point ensures consistency and responsibility in the originator's data object. The JSON array itself can be built using any typed language. Formating is important so that an auditing system can cleanly read the object receipt that encapsulates the JSON-POP obect.
+The purpose of JSON-POP is to ensure traceability at every API share point. By doing so, every touch point ensures consistency and responsibility in the originator's data object. The JSON array itself can be built using any typed language. Formating is important so that an auditing system can cleanly read the object receipt that encapsulates the JSON-POP object.
