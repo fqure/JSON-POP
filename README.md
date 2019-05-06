@@ -20,7 +20,7 @@ Once data is collected from the user, the next privacy vulnerability is data tra
 Let's hypothetically suppose that even if laws and legislation were enacted to disclose the names of 3rd parties, such as business associate agreements for public viewing, it would still leave the consumer in the dark. Does the named 3rd party get all of my data I shared when I signed up and used the application or service or only pieces of data?
 ### Removing Opacity
 What one company deems as appropriate privacy policies may not be for its users. advocates or governance. There currently is no development methodology or framework to audit, trace, and ensure user privacy practices and validate an organizations safeguarding of user privacy. Tracing user data, at every node of contact, is the key to ensure the viability of privacy. The premise being introduced here is to ensure that all data tied to privacy policies can be flagged for auditing through the use of examining the transport of user data. There are some key advantages of tracking user data using this approach:
-1) Devlopers can tag their API to privide full transparency with their stated privacy policies.
+1) Developers can tag their API to privide full transparency with their stated privacy policies.
 2) Users, advocates and oversight governance can become more efficient at examining an entity's privacy policy and standards
 3) Intellectual property of software, such as source code and business logic, can remain protected during an open audit process.
 4) Laws can be enforced, with less reliance on a software developer's disclosure.
