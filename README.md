@@ -45,6 +45,8 @@ The **JSON-POP** notation is designed to tag every data string, with a formatted
 ## Usage
 As with any proposed documentation standard, JSON-POP relies on adherance that may be self-driven, market-driven or regulatory driven. The notation can be tracked for every API call made. As every organization shares user data, the JSON-POP notaion appends. JSON-POP is made up of its object identifier, the Entity- a developers name or organization's legal name, a Category which identifies the tyoe if data object, and Share Rights- the permission given by the developer to share the object. In the example below, the same user information is distributed three times. All three organizaztion are listed in the POP object. If the same data object were to be shared with other organizations, each of those organizations would be listed. This ensures traceabiity during the privacy review or auditing process.
 
+## Protection
+...
 ### Examples
 
       "ÞOÞ": "[ACME Corporation][Demographic][Full]--[ABC Inc.]--[ZZZ LLC]",
